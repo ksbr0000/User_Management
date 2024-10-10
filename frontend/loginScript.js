@@ -11,7 +11,7 @@ authForm?.addEventListener('submit', async (e) => {
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('http://localhost:5000/api/auth/login', {
+        const response = await fetch('https://user-management-kappa-one.vercel.app/api/auth/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password }),
@@ -40,7 +40,7 @@ updateForm?.addEventListener('submit', async (e) => {
     const password = document.getElementById('updatePassword').value;
 
     try {
-        const response = await fetch('http://localhost:5000/api/auth/update', {
+        const response = await fetch('https://user-management-kappa-one.vercel.app/api/auth/update', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
