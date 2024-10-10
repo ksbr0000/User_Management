@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="welcomeMessage">Welcome, </h1> <!-- Updated welcome message element -->
+        <form id="updateForm">
+            <p>Here you can update your credentials</p>
+            <input type="email" id="updateEmail" placeholder="New Email" required />
+            <input type="password" id="updatePassword" placeholder="New Password" />
+            <button type="submit">Update Profile</button>
+            <button type="button" id="logoutBtn">Logout</button> <!-- Changed submit to button -->
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="loginScript.js"></script>
+</body>
+</html>
